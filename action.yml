@@ -1,0 +1,18 @@
+name: Update Nix flake
+description: Update a Nix flake inputs to latest revisions
+author: dawidd6
+branding:
+  icon: chevrons-up
+  color: blue
+outputs:
+  markdown:
+    description: |
+      Action output in Markdown format.
+      Ready to attach in PR body or comment or whatever.
+    value: ${{ steps.main.outputs.markdown }}
+runs:
+  using: composite
+  steps:
+    - shell: sh
+      id: main
+      run: $GITHUB_ACTION_PATH/main.py

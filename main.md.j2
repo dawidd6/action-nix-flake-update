@@ -1,0 +1,9 @@
+Created by [action-nix-flake-update](https://github.com/dawidd6/action-nix-flake-update).
+
+```sh
+{{ nix_output }}
+```
+
+{% for comparison in comparisons %}
+- [`{{ comparison.input }}@{{ comparison.old_rev }}...{{ comparison.new_rev }}`]({{ comparison.url }})
+{% endfor %}

@@ -1,0 +1,119 @@
+{
+  "nodes": {
+    "alexandria": {
+      "flake": false,
+      "locked": {
+        "host": "gitlab.common-lisp.net",
+        "lastModified": 1697628072,
+        "narHash": "sha256-vPHp/dXX24zUPF1t7EdBryzqlG33A0fOoD5loFOxAEs=",
+        "owner": "alexandria",
+        "repo": "alexandria",
+        "rev": "154eee9951d7bd8e0aeeb4928aece30a99bf2c6a",
+        "type": "gitlab"
+      },
+      "original": {
+        "host": "gitlab.common-lisp.net",
+        "owner": "alexandria",
+        "repo": "alexandria",
+        "rev": "154eee9951d7bd8e0aeeb4928aece30a99bf2c6a",
+        "type": "gitlab"
+      }
+    },
+    "home-manager": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1728903686,
+        "narHash": "sha256-ZHFrGNWDDriZ4m8CA/5kDa250SG1LiiLPApv1p/JF0o=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "e1aec543f5caf643ca0d94b6a633101942fd065f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "e1aec543f5caf643ca0d94b6a633101942fd065f",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1728492678,
+        "narHash": "sha256-9UTxR8eukdg+XZeHgxW5hQA9fIKHsKCdOIUycTryeVw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "5633bcff0c6162b9e4b5f1264264611e950c8ec7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1728979821,
+        "narHash": "sha256-R0+1UMKYk+03iUDH3qcJ5yxAXXV3sDTDO4CRMZX3kcc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "6f1890f3e6cd5c0945dbbf35ae35868e2767dc43",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "6f1890f3e6cd5c0945dbbf35ae35868e2767dc43",
+        "type": "github"
+      }
+    },
+    "nur-expressions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729051404,
+        "narHash": "sha256-FXWAhZbxQ/twHdgKUMGto28qBuxWLju5HIFH44ERzq8=",
+        "owner": "rycee",
+        "repo": "nur-expressions",
+        "rev": "7122959edcf173a13b728291176b1c9799fd1b55",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "rycee",
+        "repo": "nur-expressions",
+        "rev": "7122959edcf173a13b728291176b1c9799fd1b55",
+        "type": "gitlab"
+      }
+    },
+    "root": {
+      "inputs": {
+        "alexandria": "alexandria",
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs_2",
+        "nur-expressions": "nur-expressions",
+        "spectrum": "spectrum"
+      }
+    },
+    "spectrum": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732492500,
+        "narHash": "sha256-wWKnIHcmV81JPoDd2JRVqpVRjo5I05jmc3E7yncwHuQ=",
+        "ref": "refs/heads/main",
+        "rev": "67607dedfe49839a33c8b1fa2e33d5dfda2a979a",
+        "revCount": 788,
+        "type": "git",
+        "url": "https://spectrum-os.org/git/spectrum"
+      },
+      "original": {
+        "rev": "67607dedfe49839a33c8b1fa2e33d5dfda2a979a",
+        "type": "git",
+        "url": "https://spectrum-os.org/git/spectrum"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

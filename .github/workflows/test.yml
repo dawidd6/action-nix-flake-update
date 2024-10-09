@@ -1,0 +1,27 @@
+name: Test Action
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Nix
+        uses: cachix/install-nix-action@v30
+
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Test code
+        run: ./test.sh
+
+      - name: Test action
+        id: action
+        uses: ./
+
+      - name: Save summary
+        run: echo '${{ steps.action.outputs.markdown }}' > $GITHUB_STEP_SUMMARY
